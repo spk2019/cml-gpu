@@ -1,1 +1,2 @@
- cudatoolkit=11.3 -c pytorch
+ torch
+ torchvision
