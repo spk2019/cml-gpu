@@ -11,9 +11,8 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          CODEBLOCK="\`\`\`"
-          echo $CODEBLOCK > report.md
-          nvidia-smi >> report.md
-          echo $CODEBLOCK >> report.md
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
+          python3 train.py
           
           cml comment create report.md
