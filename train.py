@@ -11,4 +11,4 @@ print(f"DEVICE: {torch.cuda.get_device_name()}")
 print(f"GPU AVAILABLE : {torch.cuda.is_available()}")
 print(f"RUNNING ON : {device}")
 
-print(=====================did u work out================)
+
